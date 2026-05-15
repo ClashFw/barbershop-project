@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BarberShop Pro — Kontakt</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3l-6.5 6.5L13 8l3-3-1-1-3 3-1.5-1.5L14 3H9.5L7 5.5l1.5 1.5L3 12l5.5 5.5L3 23h4.5L10 20.5 8.5 19 10 17.5 11.5 19l1.5-1.5 6.5 6.5 1.5-1.5-6.5-6.5L16 16l3-3-1-1-3 3-1.5-1.5L21 3z"/></svg>
+      BarberShop Pro
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Otwórz menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">O Nas</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Cennik</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <header class="hero">
+    <img src="https://source.unsplash.com/1600x500/?barbershop,door" alt="Wejście do salonu BarberShop Pro">
+    <div class="overlay"><h1>Kontakt</h1></div>
+  </header>
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
+      <div class="row g-4">
+        <aside class="col-md-4">
+          <address>
+            <p><i class="bi bi-geo-alt-fill me-2"></i>ul. Piękna 12<br>Łódź, 90-001</p>
+            <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:+48123456789">+48 123 456 789</a></p>
+            <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:kontakt@barbershoppro.pl">kontakt@barbershoppro.pl</a></p>
+            <p><i class="bi bi-clock-fill me-2"></i>Pon–Pt: 9:00–20:00<br>Sob: 9:00–16:00</p>
+          </address>
+        </aside>
+        <div class="col-md-8">
+          <form id="contact-form" class="needs-validation" novalidate>
+            <div class="mb-3"><label for="name" class="form-label">Imię i nazwisko</label><input id="name" name="name" type="text" class="form-control" placeholder="Jan Kowalski" required><div class="invalid-feedback">Proszę wpisać imię i nazwisko.</div></div>
+            <div class="mb-3"><label for="email" class="form-label">Adres mailowy</label><input id="email" name="email" type="email" class="form-control" placeholder="jan@example.com" required><div class="invalid-feedback">Proszę wpisać poprawny adres e-mail.</div></div>
+            <div class="mb-3"><label for="topic" class="form-label">Wybierz temat</label><select id="topic" name="topic" class="form-select" required><option value="">Wybierz temat...</option><option value="rezerwacja">Rezerwacja wizyty</option><option value="zapytanie">Zapytanie ogólne</option><option value="wspolpraca">Współpraca</option><option value="inne">Inne</option></select><div class="invalid-feedback">Proszę wybrać temat.</div></div>
+            <div class="mb-3"><label for="msg" class="form-label">Treść wiadomości</label><textarea id="msg" name="msg" class="form-control" rows="5" placeholder="Napisz swoją wiadomość..." required></textarea><div class="invalid-feedback">Proszę wpisać treść wiadomości.</div></div>
+            <button type="submit" class="btn btn-dark">Wyślij</button>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <iframe title="Lokalizacja BarberShop Pro na mapie" src="https://www.google.com/maps?q=%C5%81%C3%B3d%C5%BA+ul.+Pi%C4%99kna+12&output=embed" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="py-4">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2026 BarberShop Pro. Wszelkie prawa zastrzeżone.</p>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BarberShop Pro — Cennik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3l-6.5 6.5L13 8l3-3-1-1-3 3-1.5-1.5L14 3H9.5L7 5.5l1.5 1.5L3 12l5.5 5.5L3 23h4.5L10 20.5 8.5 19 10 17.5 11.5 19l1.5-1.5 6.5 6.5 1.5-1.5-6.5-6.5L16 16l3-3-1-1-3 3-1.5-1.5L21 3z"/></svg>
+      BarberShop Pro
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Otwórz menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">O Nas</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pricing.html">Cennik</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <header class="hero">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&h=500&fit=crop" alt="Cennik usług BarberShop Pro">
+    <div class="overlay"><h1>Cennik</h1></div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-dark table-striped table-hover align-middle shadow-sm">
+          <thead class="table-warning text-dark">
+            <tr>
+              <th scope="col">Usługa</th>
+              <th scope="col">Cena</th>
+              <th scope="col">Czas</th>
+              <th scope="col">Popularność</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="bi bi-scissors me-2 text-warning"></i>Strzyżenie klasyczne</td>
+              <td>80 zł</td>
+              <td>45 min</td>
+              <td><span class="badge bg-success">Popularne</span></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-brush me-2 text-info"></i>Strzyżenie + broda</td>
+              <td>120 zł</td>
+              <td>60 min</td>
+              <td><span class="badge bg-warning text-dark">Bestseller</span></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-star-fill me-2 text-danger"></i>Pakiet premium</td>
+              <td>160 zł</td>
+              <td>75 min</td>
+              <td><span class="badge bg-danger">VIP</span></td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-droplet-half me-2 text-primary"></i>Modelowanie brody</td>
+              <td>50 zł</td>
+              <td>30 min</td>
+              <td><span class="badge bg-info text-dark">Nowość</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6">
+          <div class="card border-success shadow-sm h-100">
+            <div class="card-body">
+              <h2 class="h4 text-success"><i class="bi bi-gift-fill me-2"></i>Pakiety promocyjne</h2>
+              <ul class="mt-3 mb-0">
+                <li>2 wizyty w miesiącu: <strong>10% rabatu</strong></li>
+                <li>Pakiet ojciec + syn: <strong>15% rabatu</strong></li>
+                <li>Voucher prezentowy: <strong>od 100 zł</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-warning shadow-sm h-100">
+            <div class="card-body">
+              <h2 class="h4 text-warning"><i class="bi bi-info-circle-fill me-2"></i>Informacje</h2>
+              <p class="mt-3 mb-2">Wszystkie ceny zawierają konsultację oraz stylizację końcową.</p>
+              <p class="mb-0">Rezerwacje anulowane mniej niż 12 godzin przed wizytą mogą podlegać opłacie.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="py-4">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2026 BarberShop Pro. Wszelkie prawa zastrzeżone.</p>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -34,52 +34,70 @@
     <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&h=500&fit=crop" alt="Cennik usług BarberShop Pro">
     <div class="overlay"><h1>Cennik</h1></div>
   </header>
-  <section>
+
+  <section id="pricing" class="dark-bg text-white">
     <div class="container">
-      <div class="table-responsive">
-        <table class="table table-dark table-striped table-hover align-middle shadow-sm">
-          <thead class="table-warning text-dark">
-            <tr>
-              <th scope="col">Usługa</th>
-              <th scope="col">Cena</th>
-              <th scope="col">Czas</th>
-              <th scope="col">Popularność</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><i class="bi bi-scissors me-2 text-warning"></i>Strzyżenie klasyczne</td>
-              <td>80 zł</td>
-              <td>45 min</td>
-              <td><span class="badge bg-success">Popularne</span></td>
-            </tr>
-            <tr>
-              <td><i class="bi bi-brush me-2 text-info"></i>Strzyżenie + broda</td>
-              <td>120 zł</td>
-              <td>60 min</td>
-              <td><span class="badge bg-warning text-dark">Bestseller</span></td>
-            </tr>
-            <tr>
-              <td><i class="bi bi-star-fill me-2 text-danger"></i>Pakiet premium</td>
-              <td>160 zł</td>
-              <td>75 min</td>
-              <td><span class="badge bg-danger">VIP</span></td>
-            </tr>
-            <tr>
-              <td><i class="bi bi-droplet-half me-2 text-primary"></i>Modelowanie brody</td>
-              <td>50 zł</td>
-              <td>30 min</td>
-              <td><span class="badge bg-info text-dark">Nowość</span></td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 class="text-center mb-4">Nasze Usługi</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <article class="card h-100 bg-secondary text-white border-0">
+            <div class="card-body d-flex flex-column">
+              <div class="text-center mb-3"><i class="bi bi-scissors" style="font-size: 2rem; color: var(--accent);"></i></div>
+              <h3 class="card-title h5">Strzyżenie Klasyczne</h3>
+              <p class="accent fs-4 mb-2">80 zł</p>
+              <p class="small text-muted">45 min</p>
+              <p>Eleganckie cięcie dopasowane do kształtu twarzy.</p>
+              <ul class="mb-4"><li>Konsultacja</li><li>Strzyżenie nożycami lub maszynką</li><li>Stylizacja</li></ul>
+              <button class="btn btn-outline-light mt-auto">Wybieram</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-3">
+          <article class="card h-100 border border-warning text-white" style="background:#2a2a2a">
+            <div class="card-body d-flex flex-column">
+              <div class="text-center mb-3"><i class="bi bi-brush" style="font-size: 2rem; color: var(--accent);"></i></div>
+              <h3 class="card-title h5 accent">Strzyżenie + Broda</h3>
+              <p class="accent fs-4 mb-2">120 zł</p>
+              <p class="small text-muted">60 min</p>
+              <p>Kompletny pakiet dla mężczyzn ceniących każdy detal.</p>
+              <ul class="mb-4"><li>Konsultacja</li><li>Strzyżenie</li><li>Modelowanie i pielęgnacja brody</li></ul>
+              <button class="btn btn-accent mt-auto">Wybieram</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-3">
+          <article class="card h-100 bg-secondary text-white border-0">
+            <div class="card-body d-flex flex-column">
+              <div class="text-center mb-3"><i class="bi bi-star-fill" style="font-size: 2rem; color: var(--accent);"></i></div>
+              <h3 class="card-title h5">Pakiet Premium</h3>
+              <p class="accent fs-4 mb-2">160 zł</p>
+              <p class="small text-muted">75 min</p>
+              <p>Najwyższy standard z kosmetykami premium.</p>
+              <ul class="mb-4"><li>Konsultacja</li><li>Strzyżenie</li><li>Broda + masaż skóry głowy</li><li>Kosmetyki premium</li></ul>
+              <button class="btn btn-outline-light mt-auto">Wybieram</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-3">
+          <article class="card h-100 bg-secondary text-white border-0">
+            <div class="card-body d-flex flex-column">
+              <div class="text-center mb-3"><i class="bi bi-droplet-half" style="font-size: 2rem; color: var(--accent);"></i></div>
+              <h3 class="card-title h5">Modelowanie Brody</h3>
+              <p class="accent fs-4 mb-2">50 zł</p>
+              <p class="small text-muted">30 min</p>
+              <p>Precyzyjne modelowanie i pielęgnacja zarostu.</p>
+              <ul class="mb-4"><li>Konsultacja</li><li>Modelowanie</li><li>Pielęgnacja</li></ul>
+              <button class="btn btn-outline-light mt-auto">Wybieram</button>
+            </div>
+          </article>
+        </div>
       </div>
 
       <div class="row g-4 mt-4">
         <div class="col-md-6">
-          <div class="card border-success shadow-sm h-100">
+          <div class="card bg-secondary text-white border-0 shadow-sm h-100">
             <div class="card-body">
-              <h2 class="h4 text-success"><i class="bi bi-gift-fill me-2"></i>Pakiety promocyjne</h2>
+              <h2 class="h4 accent"><i class="bi bi-gift-fill me-2"></i>Pakiety promocyjne</h2>
               <ul class="mt-3 mb-0">
                 <li>2 wizyty w miesiącu: <strong>10% rabatu</strong></li>
                 <li>Pakiet ojciec + syn: <strong>15% rabatu</strong></li>
@@ -89,9 +107,9 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card border-warning shadow-sm h-100">
+          <div class="card bg-secondary text-white border-0 shadow-sm h-100">
             <div class="card-body">
-              <h2 class="h4 text-warning"><i class="bi bi-info-circle-fill me-2"></i>Informacje</h2>
+              <h2 class="h4 accent"><i class="bi bi-info-circle-fill me-2"></i>Informacje</h2>
               <p class="mt-3 mb-2">Wszystkie ceny zawierają konsultację oraz stylizację końcową.</p>
               <p class="mb-0">Rezerwacje anulowane mniej niż 12 godzin przed wizytą mogą podlegać opłacie.</p>
             </div>
